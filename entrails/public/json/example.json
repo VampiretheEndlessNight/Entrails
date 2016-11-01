@@ -1,0 +1,25 @@
+{
+	"character":{
+		"name": "Fiona Skeoch",
+		"age": "Elder",
+		"vitae": 15
+	}
+}
+
+{ "path": {
+	"name": "nobility",
+	"levels":{
+		"0": "Vulnerable: Can’t initiate combat, etc.",
+		"1": "The Lord’s Favor: You may offer another Kindred Prestige Tokens directly. If they accept, discard an additional Token.",
+		"3": "Regal Countenance: All Path Skills others seek to use on you without your permission cost an additional Prestige.",
+		"6": "Vast Empire: When you select this Path, choose one of the following Influences (Bureaucracy , Financial, or Street) which you don’t have as an Asset, and paste its mechanics on your sheet (below)."
+	}
+
+} }
+
+{"assets": 
+	[{"name": "Contacts",
+		"level": "2",
+		"description": "Twice tonight, you may look at a random Drama Card in another player’s hand."
+	}]
+}}
