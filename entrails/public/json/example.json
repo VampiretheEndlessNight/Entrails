@@ -1,25 +1,100 @@
 {
-	"character":{
+	"character": {
 		"name": "Fiona Skeoch",
 		"age": "Elder",
-		"vitae": 15
-	}
+		"vitae": 15,
+		"prestige": 6,
+		"clan": [{
+			"name": "Brujah",
+			"conflict": "The first time you’re antagonized by a character each night, spend a Prestige or attack as though Hungry.",
+			"public": true
+		}]
+	},
+
+
+	"path": {
+		"name": "Nobility",
+		"levels": {
+			"0": "Vulnerable: Can’t initiate combat, etc.",
+			"1": "The Lord’s Favor: You may offer another Kindred Prestige Tokens directly. If they accept, discard an additional Token.",
+			"3": "Regal Countenance: All Path Skills others seek to use on you without your permission cost an additional Prestige.",
+			"6": "Vast Empire: When you select this Path, choose one of the following Influences (Bureaucracy , Financial, or Street) which you don’t have as an Asset, and paste its mechanics on your sheet (below).",
+			"overflow": "For each Extra Prestige, you may Leverage one of your Influences without leaving it tapped."
+		},
+
+		"unlock": [{
+				"name": "Puppet Master",
+				"description": "You can spend a Prestige to reuse an Asset that you’ve already used tonight."
+			},
+
+			{
+				"name": "Largesse",
+				"description": "You get two Prestige tokens, separate from your pool to hand out to younger Kindred"
+			}
+		],
+
+		"conflict": "Lose a Prestige for being refused by a player twice in a row."
+	},
+
+	"assets": {
+		"backgrounds": [{
+			"name": "Contacts",
+			"level": 2,
+			"description": "Twice tonight, you may look at a random Drama Card in another player’s hand."
+		}, {
+			"name": "Herd",
+			"level": 1,
+			"description": "You can spend ten minutes to get two Vitae, once or allow another player to do so."
+		}, {
+			"name": "Retainers",
+			"level": 1,
+			"description": "You can start play with a \u25CF Retainer, unless lost. +1 Card at Resolution to swap it or recover, if lost."
+		}],
+
+		"influences": [{
+			"name": "Medical",
+			"active": "true",
+			"description": "You may select another Player (or yourself) during Resolution to start next session with three more Vitae."
+		}]
+	},
+
+
+	"diciplines": [{
+			"title": "Celerity",
+			"skill": [{
+				"name": "Quick Step",
+				"level": "Basic",
+				"description": "You may spend a Vitae to move an extra three feet as part of your Strike. If you’re already three feet from any opponents at the start of your turn and you wish to escape combat, you automatically win if your Celerity rating is higher than any of your opponents."
+			}]
+		}, {
+			"title": "Potence",
+			"skill": [{
+				"name": "Unyeilding Grasp",
+				"level": "Basic",
+				"description": "Characters with less Potence than you must test twice to break your Grab and you get a retest if trying to break free. If you have two levels more Potence than your opponent, you automatically maintain your hold or break hers when tested to do either. If your opponent tries to break your Grab (or can’t, as above), you may end Combat for your next Strike (her Frenzy ends, if she’s Hungry). Your Grab continues, and your target cannot attempt to break it or target you with Disciplines, unless you attempt a Strike (Combat begins again) or release her from the Grab."
+			}, {
+				"name": "Brutality",
+				"level": "Intermediate",
+				"description": "Your successful Melee and Brawl inflict an extra Wound."
+			}]
+		}, {
+			"title": "Presence",
+			"skill": [{
+				"name": "Awe",
+				"level": "Basic",
+				"description": "Narrate that being around you feels awesome (and let them know you can give them Prestige). You can spend a Vitae to grant others a Prestige, provided they haven’t benefited from this power tonight."
+
+			}, {
+				"name": "Entrancement",
+				"level": "Intermediate",
+				"description": "Get an Entrancement card at the start of play. Spend a Vitae, to offer it. If she accepts, spend a second Vitae."
+			}, {
+				"name": "Majesty",
+				"level": "Advanced",
+				"description": "To activate this power, spend two Vitae and shout “Majesty!” For the next thirty minutes, or until you attack, or become Vulnerable, raising a voice to you or attempt to Strike you costs a Vitae. Your Prestige is considered two Tokens higher for all purposes. You may, as a ]Strike, burn a Vitae to end Combat and render any character involved unable to initiate another Combat for fifteen minutes. Finally, you may hand out three Prestige tokens (not yours), to those who endear themselves to you."
+			}]
+
+		}
+
+	]
 }
-
-{ "path": {
-	"name": "nobility",
-	"levels":{
-		"0": "Vulnerable: Can’t initiate combat, etc.",
-		"1": "The Lord’s Favor: You may offer another Kindred Prestige Tokens directly. If they accept, discard an additional Token.",
-		"3": "Regal Countenance: All Path Skills others seek to use on you without your permission cost an additional Prestige.",
-		"6": "Vast Empire: When you select this Path, choose one of the following Influences (Bureaucracy , Financial, or Street) which you don’t have as an Asset, and paste its mechanics on your sheet (below)."
-	}
-
-} }
-
-{"assets": 
-	[{"name": "Contacts",
-		"level": "2",
-		"description": "Twice tonight, you may look at a random Drama Card in another player’s hand."
-	}]
-}}
