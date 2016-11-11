@@ -1,0 +1,256 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required":false,
+	"properties":{
+		"assets": {
+			"type":"object",
+			"id": "http://jsonschema.net/assets",
+			"required":false,
+			"properties":{
+				"backgrounds": {
+					"type":"array",
+					"id": "http://jsonschema.net/assets/backgrounds",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/assets/backgrounds/0",
+							"required":false,
+							"properties":{
+								"description": {
+									"type":"string",
+									"id": "http://jsonschema.net/assets/backgrounds/0/description",
+									"required":false
+								},
+								"level": {
+									"type":"number",
+									"id": "http://jsonschema.net/assets/backgrounds/0/level",
+									"required":false
+								},
+								"name": {
+									"type":"string",
+									"id": "http://jsonschema.net/assets/backgrounds/0/name",
+									"required":false
+								}
+							}
+						}
+					
+
+				},
+				"influences": {
+					"type":"array",
+					"id": "http://jsonschema.net/assets/influences",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/assets/influences/0",
+							"required":false,
+							"properties":{
+								"active": {
+									"type":"string",
+									"id": "http://jsonschema.net/assets/influences/0/active",
+									"required":false
+								},
+								"description": {
+									"type":"string",
+									"id": "http://jsonschema.net/assets/influences/0/description",
+									"required":false
+								},
+								"name": {
+									"type":"string",
+									"id": "http://jsonschema.net/assets/influences/0/name",
+									"required":false
+								}
+							}
+						}
+					
+
+				}
+			}
+		},
+		"character": {
+			"type":"object",
+			"id": "http://jsonschema.net/character",
+			"required":false,
+			"properties":{
+				"age": {
+					"type":"string",
+					"id": "http://jsonschema.net/character/age",
+					"required":false
+				},
+				"clan": {
+					"type":"array",
+					"id": "http://jsonschema.net/character/clan",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/character/clan/0",
+							"required":false,
+							"properties":{
+								"conflict": {
+									"type":"string",
+									"id": "http://jsonschema.net/character/clan/0/conflict",
+									"required":false
+								},
+								"name": {
+									"type":"string",
+									"id": "http://jsonschema.net/character/clan/0/name",
+									"required":false
+								},
+								"public": {
+									"type":"boolean",
+									"id": "http://jsonschema.net/character/clan/0/public",
+									"required":false
+								}
+							}
+						}
+					
+
+				},
+				"name": {
+					"type":"string",
+					"id": "http://jsonschema.net/character/name",
+					"required":false
+				},
+				"prestige": {
+					"type":"number",
+					"id": "http://jsonschema.net/character/prestige",
+					"required":false
+				},
+				"vitae": {
+					"type":"number",
+					"id": "http://jsonschema.net/character/vitae",
+					"required":false
+				}
+			}
+		},
+		"diciplines": {
+			"type":"array",
+			"id": "http://jsonschema.net/diciplines",
+			"required":false,
+			"items":
+				{
+					"type":"object",
+					"id": "http://jsonschema.net/diciplines/0",
+					"required":false,
+					"properties":{
+						"skill": {
+							"type":"array",
+							"id": "http://jsonschema.net/diciplines/0/skill",
+							"required":false,
+							"items":
+								{
+									"type":"object",
+									"id": "http://jsonschema.net/diciplines/0/skill/0",
+									"required":false,
+									"properties":{
+										"description": {
+											"type":"string",
+											"id": "http://jsonschema.net/diciplines/0/skill/0/description",
+											"required":false
+										},
+										"level": {
+											"type":"string",
+											"id": "http://jsonschema.net/diciplines/0/skill/0/level",
+											"required":false
+										},
+										"name": {
+											"type":"string",
+											"id": "http://jsonschema.net/diciplines/0/skill/0/name",
+											"required":false
+										}
+									}
+								}
+							
+
+						},
+						"title": {
+							"type":"string",
+							"id": "http://jsonschema.net/diciplines/0/title",
+							"required":false
+						}
+					}
+				}
+			
+
+		},
+		"path": {
+			"type":"object",
+			"id": "http://jsonschema.net/path",
+			"required":false,
+			"properties":{
+				"conflict": {
+					"type":"string",
+					"id": "http://jsonschema.net/path/conflict",
+					"required":false
+				},
+				"levels": {
+					"type":"object",
+					"id": "http://jsonschema.net/path/levels",
+					"required":false,
+					"properties":{
+						"0": {
+							"type":"string",
+							"id": "http://jsonschema.net/path/levels/0",
+							"required":false
+						},
+						"1": {
+							"type":"string",
+							"id": "http://jsonschema.net/path/levels/1",
+							"required":false
+						},
+						"3": {
+							"type":"string",
+							"id": "http://jsonschema.net/path/levels/3",
+							"required":false
+						},
+						"6": {
+							"type":"string",
+							"id": "http://jsonschema.net/path/levels/6",
+							"required":false
+						},
+						"overflow": {
+							"type":"string",
+							"id": "http://jsonschema.net/path/levels/overflow",
+							"required":false
+						}
+					}
+				},
+				"name": {
+					"type":"string",
+					"id": "http://jsonschema.net/path/name",
+					"required":false
+				},
+				"unlock": {
+					"type":"array",
+					"id": "http://jsonschema.net/path/unlock",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/path/unlock/0",
+							"required":false,
+							"properties":{
+								"description": {
+									"type":"string",
+									"id": "http://jsonschema.net/path/unlock/0/description",
+									"required":false
+								},
+								"name": {
+									"type":"string",
+									"id": "http://jsonschema.net/path/unlock/0/name",
+									"required":false
+								}
+							}
+						}
+					
+
+				}
+			}
+		}
+	}
+}
