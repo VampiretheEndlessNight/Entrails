@@ -1,13 +1,27 @@
-version: '2'
+version: '3'
+
 services:
-  web:
-    build: .
+  api:
+    build: ./api
     depends_on:
       - mysql
-  mysql:
-    image: mysql:5.6.26
-    environment:
-     - MYSQL_ROOT_PASSWORD=root
-     - MYSQL_DATABASE=database
     ports:
-      - "3306:3306"
+       - 3000:3000
+    volumes:
+      - ./api:/go/src/github.com/VampiretheEndlessNight/entrails/api
+  mysql:
+    build:
+      context: .
+      dockerfile: mysql/Dockerfile
+    expose:
+        - 3306
+    volumes:
+        - database_data:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_DATABASE: entrails
+        MYSQL_USER: root
+        MYSQL_PASSWORD: password
+
+volumes:
+  database_data: {}
