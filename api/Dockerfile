@@ -4,7 +4,7 @@ FROM golang
 
 ADD . /go/src/github.com/VampiretheEndlessNight/entrails/api
 
-RUN go get github.com/gorilla/mux
+RUN go get github.com/gorilla/mux & go get github.com/go-sql-driver/mysql
 
 RUN go install github.com/VampiretheEndlessNight/entrails/api
 
