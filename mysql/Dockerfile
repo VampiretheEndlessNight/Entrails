@@ -1,5 +1,5 @@
-FROM mysql:latest
+FROM mysql:5.7.15
 
-COPY setup.sh /mysql/setup.sh
-COPY setup.sql /mysql/setup.sql
-RUN /mysql/setup.sh
+ADD entrails_schema.sql /docker-entrypoint-initdb.d
+
+EXPOSE 3306

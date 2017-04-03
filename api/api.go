@@ -1,17 +1,19 @@
 package main
 
-
 import (
-"fmt"
-"net/http"
+	"encoding/json"
+	"fmt"
+	"github.com/VampiretheEndlessNight/entrails/api/db"
 	"github.com/gorilla/mux"
 	"io/ioutil"
-	"encoding/json"
+	"net/http"
 )
 
 func main() {
-fmt.Println("Server starting; listening on port 3000")
-http.ListenAndServe(":3000", Handlers())
+	fmt.Println("connecting to db . . .")
+	db.Connect()
+	fmt.Println("Server starting; listening on port 3000")
+	http.ListenAndServe(":3000", Handlers())
 }
 
 func Handlers() *mux.Router {
