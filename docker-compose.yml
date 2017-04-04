@@ -5,6 +5,7 @@ services:
     build: ./api
     depends_on:
       - db
+    command: ./tmp/wait-for-it.sh, db:3306, --
     links:
       - db
     ports:
@@ -16,9 +17,9 @@ services:
     ports:
         - 3306:3306
     volumes:
-        - /var/lib/mysql
+        - db_data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: entrails
-        MYSQL_USER: admin
-        MYSQL_PASSWORD: password
+volumes:
+  db_data:

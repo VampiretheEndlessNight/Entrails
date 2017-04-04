@@ -20,12 +20,11 @@ func Connect() {
 
 	db, err := sql.Open("mysql", "root:secret@tcp(db:3306)/entrails")
 	if err != nil {
-		if err 
 		panic(err)
 	}
 	defer db.Close()
 
-	rows, err := db.Query("SELECT table_name FROM user_tables")
+	rows, err := db.Query("show tables")
 	if err != nil {
 		panic(err)
 	}

@@ -3,6 +3,7 @@
 FROM golang
 
 ADD . /go/src/github.com/VampiretheEndlessNight/entrails/api
+ADD wait_for_it.sh /tmp/wait_for_it.sh
 
 RUN go get github.com/gorilla/mux & go get github.com/go-sql-driver/mysql
 
